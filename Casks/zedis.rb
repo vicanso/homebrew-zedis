@@ -12,6 +12,8 @@ cask "zedis" do
   desc "A blazing-fast, native Redis GUI built with Rust and GPUI"
   homepage "https://github.com/vicanso/zedis"
 
+  depends_on macos: ">= :monterey"
+
   # 5. ⚠️ 关键：告诉 Homebrew 安装 DMG 里的哪个 App
   # 确保你的 DMG 打开后，里面的文件真的叫 "Zedis.app" (区分大小写)
   app "Zedis.app"
