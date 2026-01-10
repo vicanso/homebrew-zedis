@@ -9,5 +9,17 @@ Zedis is a blazing-fast, native Redis GUI client built with Rust and GPUI, desig
 You can install Zedis via Homebrew Cask with the following commands:
 
 ```bash
-brew install --cask vicanso/zedis/zedis
+# 1. Add the tap
+brew tap vicanso/zedis
+
+# 2. Install Zedis
+brew install --cask zedis
+```
+
+## 🔄 Upgrading
+
+To update Zedis to the latest version:
+
+```bash
+brew upgrade --cask zedis
 ```

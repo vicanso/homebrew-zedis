@@ -1,8 +1,8 @@
 cask "zedis" do
   # 1. 版本号
-  version "0.1.6"
+  version "0.1.7"
   # 2. 你的 .dmg 文件的 SHA256 (运行 `shasum -a 256 zedis.dmg` 获取)
-  sha256 "3a2886d3a5ecd0144c81a5919a688eb36604353cdb0c75379f19af0f2e10756f"
+  sha256 "8f0c03e025c40c1b24f9acba53b91ef6378107ee602648a69cb375ce037917c1"
 
   # 3. GitHub Release 的 .dmg 下载链接
   url "https://github.com/vicanso/zedis/releases/download/v#{version}/Zedis-aarch64.dmg"
