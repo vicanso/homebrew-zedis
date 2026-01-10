@@ -6,10 +6,9 @@ cask "zedis" do
 
   # 3. GitHub Release 的 .dmg 下载链接
   url "https://github.com/vicanso/zedis/releases/download/v#{version}/Zedis-aarch64.dmg"
-
   # 4. 基础信息
   name "Zedis"
-  desc "A blazing-fast, native Redis GUI built with Rust and GPUI"
+  desc "Blazing-fast, native Redis GUI built with Rust and GPUI"
   homepage "https://github.com/vicanso/zedis"
 
   depends_on macos: ">= :monterey"
