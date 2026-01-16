@@ -7,13 +7,8 @@ cask "zedis" do
 
   url "https://github.com/vicanso/zedis/releases/download/v#{version}/Zedis-#{arch}.dmg"
   name "Zedis"
-  desc "Blazing-fast, native Redis GUI built with Rust and GPUI"
+  desc "Redis GUI built with Rust and GPUI"
   homepage "https://github.com/vicanso/zedis"
-
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
 
   depends_on macos: ">= :monterey"
 
@@ -21,6 +16,6 @@ cask "zedis" do
 
   zap trash: [
     "~/Library/Application Support/com.bigtree.zedis",
-    "~/Library/Saved Application State/com.bigtree.zedis.savedState",
+    "~/Library/Preferences/com.bigtree.zedis.plist",
   ]
 end
